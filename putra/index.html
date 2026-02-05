@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Nanai 💗</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #ffeef6);
+      color: #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 32px 24px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .heart {
+      font-size: 2.5rem;
+      animation: beat 1s infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 999px;
+      background: #3b131f;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+    }
+    button:hover {
+      background: #ff5c8a;
+      transform: scale(1.05);
+    }
+    .secret {
+      display: none;
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: #666;
+    }
+    footer {
+      margin-top: 24px;
+      font-size: 0.75rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">💖</div>
+    <h1>Hai Nanai</h1>
+    <p>
+      Website kecil ini dibuat khusus buat kamu.
+      Semoga tiap kali kamu buka, kamu senyum dikit.
+    </p>
+    <p>
+      Kamu itu lucu,cantik,gemes.
+      Jangan lupa ya, hari ini juga kamu hebat.
+    </p>
+    <button onclick="showSecret()">Klik kalau lagi kangen</button>
+    <div class="secret" id="secret">
+      <p>
+        Ini rahasia kecil 🤍<br />
+        Makasih udah jadi pacall aku sampaii sekarang.
+      </p>
+    </div>
+    <footer>
+      dibuat dengan 💗 khusus untuk Nanai
+    </footer>
+  </div>
+
+  <script>
+    function showSecret() {
+      const el = document.getElementById('secret');
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
